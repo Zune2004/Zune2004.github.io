@@ -153,7 +153,7 @@
     {
       "id": "languages",
       "q": "languages speak spoken tamil hindi urdu arabic english communication",
-      "a": "He speaks English, Tamil, Hindi, Urdu and Arabic, which helps when explaining technical work to customers and stakeholders across India and the Middle East.",
+      "a": "He speaks English, Tamil, Hindi, Urdu and Arabic.",
       "src": "Model details"
     },
     {
@@ -165,7 +165,7 @@
     {
       "id": "site",
       "q": "how does this chat work site built website this page model card no api key",
-      "a": "This page is styled as an AI model card. The chat answers instantly from a small set of written answers, matched with keyword search in your browser. Optionally you can load a small open model (Qwen2.5 0.5B) that runs entirely on your device with WebGPU. No server, no API key, and nothing you type leaves your browser. If a question isn't about Zunnoon's work, it politely declines: rules decide, models explain.",
+      "a": "The chat answers instantly from a small set of written answers, matched with keyword search in your browser. Optionally you can load a small open model (Qwen2.5 0.5B) that runs entirely on your device with WebGPU. No server, no API key, and nothing you type leaves your browser. If a question isn't about Zunnoon's work, it politely declines: rules decide, models explain.",
       "src": "This site"
     }
   ]

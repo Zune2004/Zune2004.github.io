@@ -163,8 +163,7 @@ async function loadWebLLM() {
     b.onclick = () => answer(t);
     sugg.appendChild(b);
   });
-  add('bot', "Hi! I answer questions about Zunnoon's work, projects and skills. Every answer shows where it came from.",
-    { trace: 'retrieval over this page · no server, no API key' });
+  add('bot', "Ask about Zunnoon's work, projects or skills. Each answer shows where it came from.");
   form.addEventListener('submit', e => {
     e.preventDefault();
     const q = input.value.trim();
