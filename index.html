@@ -6,14 +6,14 @@
 <title>Mohammed Zunnoon Aamir</title>
 <meta name="description" content="Mohammed Zunnoon Aamir, AI full-stack engineer in Chennai. I build LLM agents, retrieval systems and the apps around them, and get them into production.">
 <meta property="og:title" content="Mohammed Zunnoon Aamir">
-<meta property="og:description" content="AI full-stack engineer in Chennai. Work, projects, results and systems running right now.">
+<meta property="og:description" content="AI full-stack engineer in Chennai. Work, projects, a live matchday board and the ideas I've signed and released.">
 <meta property="og:image" content="https://zune2004.github.io/assets/img/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#f2c230">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23f2c230'/><text x='16' y='25' font-family='Arial Narrow,Arial' font-size='24' font-weight='900' fill='%23121212' text-anchor='middle'>Z</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Doto:wght@900&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/site.css">
 <script>
   try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
@@ -23,15 +23,15 @@
 <div class="shell">
 
 <aside class="panel">
-  <h1 class="name">Mohammed<br>Zunnoon<br>Aamir</h1>
+  <h1 class="name"><a href="index.html">Mohammed<br>Zunnoon<br>Aamir</a></h1>
   <p class="role">AI full-stack engineer in Chennai. I build LLM agents, retrieval systems and the apps around them, and get them into production.</p>
   <span class="status">Open to AI engineering roles</span>
   <nav aria-label="Sections">
     <a href="#about">About</a>
-    <a href="#work">Work</a>
+    <a href="#matchday">Matchday</a>
     <a href="#projects">Projects</a>
-    <a href="#results">Results</a>
-    <a href="#live">Running now</a>
+    <a href="ideas.html">Ideas</a>
+    <a href="#work">Work</a>
     <a href="#ask">Ask</a>
   </nav>
   <div class="contact">
@@ -43,7 +43,10 @@
       <a href="assets/Mohammed-Zunnoon-Aamir-Resume.pdf">Resume (PDF)</a>
     </div>
   </div>
-  <button id="theme" type="button">Dark</button>
+  <div class="kit">
+    <button id="theme" type="button"><span class="swatch" aria-hidden="true"></span><span id="kit-label">Away kit</span></button>
+    <span class="season" id="kit-season">2026/27 home kit</span>
+  </div>
 </aside>
 
 <main class="content">
@@ -74,6 +77,147 @@
         <span class="label">My own idea</span>
         <div class="quote">An AI agent that tests our products.</div>
         <p>It writes and repairs end-to-end tests from plain English. I used it to audit a company platform before release.</p>
+      </div>
+    </div>
+    <p class="more"><a href="ideas.html">See every idea I've had this year, including the ones I dropped</a></p>
+  </section>
+
+  <section class="sec" id="matchday">
+    <h2>Matchday</h2>
+    <p class="sec-intro">My Fantasy Premier League bot and my xG data pipeline run on their own every day. This board shows what they're doing right now.</p>
+    <div class="board" role="region" aria-label="Live scoreboard">
+      <div class="board-grid" id="board">
+        <div class="cell"><div class="k">Next gameweek</div><div class="v" id="b-gw">--</div></div>
+        <div class="cell wide"><div class="k">Deadline countdown</div><div class="v" id="b-count">--:--:--</div><div class="s" id="b-deadline">Loading the fixture list…</div></div>
+        <div class="cell"><div class="k">Average score</div><div class="v" id="b-avg">--</div><div class="s" id="b-top"></div></div>
+        <hr>
+        <div class="cell"><div class="k" id="b-call">Captain</div><div class="v sm" id="b-cap">--</div><div class="s">The bot's pick</div></div>
+        <div class="cell wide"><div class="k">Transfer</div><div class="v sm" id="b-transfer">--</div><div class="s" id="b-chips"></div></div>
+        <div class="cell"><div class="k">Bot's eleven</div><div class="v sm" id="b-pts">--</div><div class="s" id="b-pred"></div></div>
+        <hr>
+        <div class="ticker" id="b-ticker">xG pipeline: loading today's matches…</div>
+      </div>
+    </div>
+    <div class="board-foot">
+      <div class="live-card" id="live-acc"><h3><span class="dot"></span>FPL bot, predicted vs actual</h3><div class="skeleton">Loading…</div></div>
+      <div class="live-card" id="live-gh"><h3><span class="dot"></span>Public GitHub activity</h3><div class="skeleton">Asking GitHub…</div></div>
+    </div>
+  </section>
+
+  <section class="sec" id="projects">
+    <h2>Projects</h2>
+    <p class="sec-intro">Every project as a shot. The closer to goal, the closer it is to real users. Filled means shipped, hollow means still an experiment, and bigger means more impact. Work is on the left, personal on the right.</p>
+    <div class="pitch-wrap">
+      <div>
+        <svg class="pitch" id="shotmap" viewBox="0 -3 80 64" role="img" aria-label="Shot map of projects"></svg>
+        <div class="legend"><span><i class="g"></i>Shipped</span><span><i class="m"></i>Experiment</span><span>Left: work · Right: personal</span></div>
+      </div>
+      <div class="shot-card" id="shot-card" aria-live="polite">
+        <span class="label">Tap a shot</span>
+        <h3>Pick a project</h3>
+        <p class="muted">Each marker opens a short summary. The full write-ups are below.</p>
+      </div>
+    </div>
+
+    <div class="projects">
+      <article class="project" id="p-fpl">
+        <div class="shotimg"><img src="assets/img/fpl-lineup.png" alt="The FPL bot's recommended starting eleven next to its own ghost team" loading="lazy"></div>
+        <span class="label">Python · LightGBM · PuLP · GitHub Actions · Telegram</span>
+        <h3>FPL Auto-Manager</h3>
+        <p>A bot that manages my Fantasy Premier League team. It predicts every player's points, plans transfers, captain and chips
+          four weeks ahead, and messages me on Telegram before each deadline. It runs every hour on GitHub Actions.</p>
+        <details class="report">
+          <summary>Match report</summary>
+          <div class="score"><span class="team">Bot using FPL's own predictions</span><span class="nums">2,030 – 2,231</span><span class="team">My bot</span></div>
+          <ol class="moments">
+            <li><time>8 Oct</time>Integer-programming optimiser plans four gameweeks of transfers; a full replay of 2025/26 wins by 201 points.</li>
+            <li><time>8 Oct</time>Found that a popular dataset's "expected points" column was recorded after the matches, so I only compare against it on clean data.</li>
+            <li><time>8 Oct</time>Moved to GitHub Actions: an hourly check that only wakes the full pipeline near a deadline, with reports on Telegram.</li>
+            <li><time>8 Oct</time>Reads my real team from a screenshot with free OCR, so the bot never needs my FPL password.</li>
+            <li><time>9 Oct</time>Smaller trees (15 leaves instead of 31) beat the old model on both replay seasons.</li>
+          </ol>
+          <p class="motm"><b>Player of the match</b>Splitting the model in two: one part predicts whether a player plays, the other how many points he scores if he does.</p>
+        </details>
+        <div class="links"><span class="muted">Code on request</span></div>
+      </article>
+
+      <article class="project" id="p-xg">
+        <div class="shotimg"><img src="assets/img/xg-tournaments.png" alt="xG Lab comparing its predictions with StatsBomb's by tournament" loading="lazy"></div>
+        <span class="label">Python · LightGBM · Streamlit · GitHub Actions</span>
+        <h3>Football xG Lab and Scout</h3>
+        <p>An expected-goals model trained only on free StatsBomb data. On World Cup 2022, Euro 2024 and Copa América 2024 it performs
+          as well as StatsBomb's commercial model. Scout finds players with a similar statistical profile across Europe's top leagues.</p>
+        <details class="report">
+          <summary>Match report</summary>
+          <div class="score"><span class="team">StatsBomb, Euro 2024 log loss</span><span class="nums">0.226 – 0.228</span><span class="team">My model</span></div>
+          <ol class="moments">
+            <li><time>8 Oct</time>Added freeze frames, where every player stood at the shot. They closed 95% of the gap to StatsBomb.</li>
+            <li><time>9 Oct</time>Tested on three tournaments the model never saw, and published the app.</li>
+            <li><time>9 Oct</time>Daily GitHub Actions jobs started pulling current-season data for the top five leagues.</li>
+            <li><time>9 Oct</time>Added "why this number": each shot's xG broken down factor by factor.</li>
+            <li><time>21 Oct</time>The data source began rate-limiting; the job now retries and saves partial progress.</li>
+          </ol>
+          <p class="motm"><b>Player of the match</b>Splitting train and test data by match, so shots from one game never leak between them.</p>
+        </details>
+        <div class="links">
+          <a href="https://xg-lab-football.streamlit.app/">Open xG Lab</a>
+          <a href="https://football-scout-labs.streamlit.app/">Open Scout</a>
+          <a href="https://github.com/Zune2004/football-xg-lab">Code</a>
+        </div>
+      </article>
+
+      <article class="project" id="p-kaggle">
+        <span class="label">PyTorch · reinforcement learning · LLM agents</span>
+        <h3>Kaggle competitions</h3>
+        <p>Medical imaging in RSNA knee abnormality detection (top 13%), a card-game AI in the Pokémon TCG AI Battle (top 16%), and LLM
+          agents that play interactive reasoning games in ARC-AGI-3.</p>
+        <details class="decisions">
+          <summary>Decisions along the way</summary>
+          <ul>
+            <li><strong>Batched every game decision</strong> into one GPU call, which made self-play training about six times faster.</li>
+            <li><strong>One change per submission,</strong> written down before running, so I always know what moved the score.</li>
+            <li><strong>Read the top 50 solutions</strong> after RSNA closed to see what I missed.</li>
+          </ul>
+        </details>
+        <div class="links"><a href="https://www.kaggle.com/mozune4002">Kaggle profile</a></div>
+      </article>
+
+      <article class="project" id="p-qa">
+        <span class="label">Claude Code · Playwright · TypeScript</span>
+        <h3>AI QA agent</h3>
+        <p>Agents that plan, write and fix end-to-end tests from plain-English descriptions. Once a test is stable it becomes a fixed
+          Playwright spec, because CI needs tests that behave the same way every run.</p>
+      </article>
+
+      <article class="project" id="p-notes">
+        <span class="label">Python · Whisper · ffmpeg · Claude · Netlify</span>
+        <h3>Sovereign AI notes</h3>
+        <p>Study notes for Sequoia's six-talk series on sovereign AI. A script downloads each talk, pulls out the slides, transcribes the
+          audio and writes illustrated notes, published as a small static site.</p>
+        <div class="links"><a href="https://sovereign-ai-notes.netlify.app">Read the notes</a></div>
+      </article>
+
+      <article class="project" id="p-agents">
+        <span class="label">Competition entry</span>
+        <h3>Public-interest AI agents</h3>
+        <p>A set of agents I'm preparing for an AI agents competition. I'll write them up after judging.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="sec" id="shoot">
+    <h2>Take a shot</h2>
+    <p class="sec-intro">Tap anywhere on the pitch to shoot. A small version of my xG model, trained on 28,630 open-play shots, tells you how often that chance is scored.</p>
+    <div class="pitch-wrap">
+      <svg class="pitch" id="demo" viewBox="0 -3 80 64" role="img" aria-label="Tap the pitch to take a shot"></svg>
+      <div class="demo-out">
+        <span class="label">Expected goals</span>
+        <div class="xg" id="demo-xg">0.23<small>xG</small></div>
+        <p id="demo-text">From the penalty spot in open play, this is scored about 1 time in 4.</p>
+        <div class="demo-opts">
+          <label for="demo-head"><input type="checkbox" id="demo-head"> Header</label>
+        </div>
+        <p class="muted" id="demo-note">This demo uses only shot position and body part. The full model in xG Lab also uses where every defender and the goalkeeper stood.</p>
       </div>
     </div>
   </section>
@@ -124,87 +268,6 @@
     </div>
   </section>
 
-  <section class="sec" id="projects">
-    <h2>Projects</h2>
-    <div class="projects">
-      <article class="project">
-        <div class="shot"><img src="assets/img/fpl-lineup.png" alt="The FPL bot's recommended starting eleven next to its own ghost team" loading="lazy"></div>
-        <span class="label">Python · LightGBM · PuLP · GitHub Actions · Telegram</span>
-        <h3>FPL Auto-Manager</h3>
-        <p>A bot that manages my Fantasy Premier League team. It predicts every player's points, plans transfers, captain and chips
-          four weeks ahead, and messages me on Telegram before each deadline. It runs every hour on GitHub Actions.</p>
-        <details class="decisions">
-          <summary>Decisions along the way</summary>
-          <ul>
-            <li><strong>Two models instead of one.</strong> One predicts whether a player plays, the other how many points he scores if he does.</li>
-            <li><strong>Found a leak in a popular dataset.</strong> Its "expected points" column was recorded after the matches, so I only compare against it on clean 2025/26 data.</li>
-            <li><strong>Cheap check first.</strong> A small script runs hourly and only starts the full pipeline when a deadline is close.</li>
-            <li><strong>No password stored.</strong> It reads my real team from a screenshot instead of logging in to FPL.</li>
-          </ul>
-        </details>
-        <div class="links"><span class="muted">Code on request</span></div>
-      </article>
-
-      <article class="project">
-        <div class="shot"><img src="assets/img/xg-tournaments.png" alt="xG Lab comparing its predictions with StatsBomb's by tournament" loading="lazy"></div>
-        <span class="label">Python · LightGBM · Streamlit · GitHub Actions</span>
-        <h3>Football xG Lab and Scout</h3>
-        <p>An expected-goals model trained only on free StatsBomb data. On World Cup 2022, Euro 2024 and Copa América 2024 it performs
-          as well as StatsBomb's commercial model. Scout finds players with a similar statistical profile across Europe's top leagues.</p>
-        <details class="decisions">
-          <summary>Decisions along the way</summary>
-          <ul>
-            <li><strong>Split by match.</strong> Shots from one game never appear in both training and test data.</li>
-            <li><strong>Used freeze frames.</strong> The model sees where every player stood when the shot was taken.</li>
-            <li><strong>Careful wording.</strong> A paired bootstrap shows the gap to StatsBomb isn't significant, so I say the models are level.</li>
-          </ul>
-        </details>
-        <div class="links">
-          <a href="https://xg-lab-football.streamlit.app/">Open xG Lab</a>
-          <a href="https://football-scout-labs.streamlit.app/">Open Scout</a>
-          <a href="https://github.com/Zune2004/football-xg-lab">Code</a>
-        </div>
-      </article>
-
-      <article class="project">
-        <span class="label">PyTorch · reinforcement learning · LLM agents</span>
-        <h3>Kaggle competitions</h3>
-        <p>Medical imaging in RSNA knee abnormality detection, a card-game AI in the Pokémon TCG AI Battle, and LLM agents that play
-          interactive reasoning games in ARC-AGI-3.</p>
-        <details class="decisions">
-          <summary>Decisions along the way</summary>
-          <ul>
-            <li><strong>Batched every game decision</strong> into one GPU call, which made self-play training about six times faster.</li>
-            <li><strong>One change per submission,</strong> written down before running, so I always know what moved the score.</li>
-            <li><strong>Read the top 50 solutions</strong> after RSNA closed to see what I missed.</li>
-          </ul>
-        </details>
-        <div class="links"><a href="https://www.kaggle.com/mozune4002">Kaggle profile</a></div>
-      </article>
-
-      <article class="project">
-        <span class="label">Claude Code · Playwright · TypeScript</span>
-        <h3>AI QA agent</h3>
-        <p>Agents that plan, write and fix end-to-end tests from plain-English descriptions. Once a test is stable it becomes a fixed
-          Playwright spec, because CI needs tests that behave the same way every run.</p>
-      </article>
-
-      <article class="project">
-        <span class="label">Python · Whisper · ffmpeg · Claude · Netlify</span>
-        <h3>Sovereign AI notes</h3>
-        <p>Study notes for Sequoia's six-talk series on sovereign AI. A script downloads each talk, pulls out the slides, transcribes the
-          audio and writes illustrated notes, published as a small static site.</p>
-        <div class="links"><a href="https://sovereign-ai-notes.netlify.app">Read the notes</a></div>
-      </article>
-
-      <article class="project">
-        <span class="label">Competition entry</span>
-        <h3>Public-interest AI agents</h3>
-        <p>A set of agents I'm preparing for an AI agents competition. I'll write them up after judging.</p>
-      </article>
-    </div>
-  </section>
-
   <section class="sec" id="results">
     <h2>Results</h2>
     <div class="table-scroll">
@@ -218,16 +281,6 @@
           <tr><td class="n">0.97</td><td>FPL points error per player, 2025/26</td><td class="muted">FPL's own predictions: 1.09</td></tr>
         </tbody>
       </table>
-    </div>
-  </section>
-
-  <section class="sec" id="live">
-    <h2>Running now</h2>
-    <div class="live">
-      <div class="live-card" id="live-fpl"><h3><span class="dot"></span>FPL bot, this week</h3><div class="skeleton">Loading the bot's latest report…</div></div>
-      <div class="live-card" id="live-xg"><h3><span class="dot"></span>xG pipeline, latest matches</h3><div class="skeleton">Fetching today's data…</div></div>
-      <div class="live-card" id="live-acc"><h3><span class="dot"></span>FPL bot, predicted vs actual</h3><div class="skeleton">Loading…</div></div>
-      <div class="live-card" id="live-gh"><h3><span class="dot"></span>Public GitHub activity</h3><div class="skeleton">Asking GitHub…</div></div>
     </div>
   </section>
 

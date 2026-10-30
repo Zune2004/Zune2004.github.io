@@ -167,6 +167,13 @@
       "q": "how does this chat work site built website this page model card no api key",
       "a": "The chat answers instantly from a small set of written answers, matched with keyword search in your browser. Optionally you can load a small open model (Qwen2.5 0.5B) that runs entirely on your device with WebGPU. No server, no API key, and nothing you type leaves your browser. If a question isn't about Zunnoon's work, it politely declines: rules decide, models explain.",
       "src": "This site"
+    },
+    {
+      "id": "ideas",
+      "q": "ideas pitched transfer window scouted trialled signed released dropped failed",
+      "a": "His ideas page lists every idea he worked on this year as a transfer window: scouted (want to build next), on trial, signed (shipped) and released (stopped, with the reason). Shipped ones include the FPL bot, xG Lab, an AI QA agent, and an Islamic finance intelligence platform built from a one-line leadership brief.",
+      "src": "Ideas page",
+      "link": "ideas.html"
     }
   ]
 }

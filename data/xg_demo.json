@@ -1,0 +1,22 @@
+{
+ "coef": [
+  -0.2017,
+  2.20059,
+  -1.32851,
+  1.79752
+ ],
+ "intercept": -4.84087,
+ "features": [
+  "dist",
+  "angle",
+  "header",
+  "log1p_dist"
+ ],
+ "n_train": 28630,
+ "n_test": 7102,
+ "logloss": 0.2694,
+ "logloss_statsbomb": 0.2532,
+ "auc": 0.784,
+ "auc_statsbomb": 0.819,
+ "half_goal": 4.0
+}
