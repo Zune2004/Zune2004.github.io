@@ -1,0 +1,172 @@
+{
+  "contact": "mohammed.zunnoon.aamir.avaram@gmail.com",
+  "suggestions": [
+    "What is he best at?",
+    "What has he built with LLM agents?",
+    "How does he make AI safe?",
+    "Tell me about the FPL bot",
+    "What's his tech stack?",
+    "Is he open to new roles?"
+  ],
+  "entries": [
+    {
+      "id": "who",
+      "q": "who is zunnoon summary about him introduce yourself tell me about him overview",
+      "a": "Mohammed Zunnoon Aamir is an AI Full-Stack Engineer at Digitech Evoqe in Chennai, India. He ships LLM products to production: tool-using agents with guardrails, RAG pipelines, and the React/TypeScript and Python systems around them. Before that he was an AI Intern at ZaryahX, working on the ZaryahPlus app. He finished his B.Tech in Computer Science at VIT Chennai in May 2026.",
+      "src": "Model details"
+    },
+    {
+      "id": "trait",
+      "q": "best at strength strongest trait ideas innovative creative why hire what makes him different unique",
+      "a": "His strongest trait is ideas. He proposes product ideas to the company, and when leadership hands him a one-line brief he finds a practical way to build it and gets it into production. Examples: an Islamic finance intelligence proof of concept in under two weeks from a leadership brief, a client's WhatsApp assistant built solo, and his own idea of an AI agent that tests the company's products.",
+      "src": "From idea to shipped"
+    },
+    {
+      "id": "current",
+      "q": "current job role now digitech evoqe work today employer position title",
+      "a": "Since August 2026 he has been an AI Full-Stack Engineer at Digitech Evoqe, the sister company of ZaryahX. He continues as a core engineer on ZaryahPlus, built an Islamic finance intelligence platform, built a multi-tenant WhatsApp AI assistant for a client, builds small domain language models with evaluation-gated releases, and built the server core of an on-premise multi-agent work coordinator.",
+      "src": "Experience · Digitech Evoqe"
+    },
+    {
+      "id": "intern",
+      "q": "zaryahx internship intern zaryahplus raya previous job may july",
+      "a": "From May to July 2026 he was an AI Intern at ZaryahX on ZaryahPlus (zaryahplus.com), an Islamic lifestyle and fintech app with an AI companion called Raya. He built the Telegram assistant and the Finance module end to end, and hardened LLM guardrails across the product.",
+      "src": "Experience · ZaryahX"
+    },
+    {
+      "id": "telegram",
+      "q": "telegram bot assistant raya streaming group tasks voice documents audit token",
+      "a": "He built ZaryahPlus's Telegram assistant end to end: Raya's replies stream into Telegram as they are generated, groups can assign and track tasks with reminders and recurrence, it understands voice notes and documents, and he ran a security audit that closed a critical token leak and fixed transport failures.",
+      "src": "Experience · ZaryahX"
+    },
+    {
+      "id": "finance",
+      "q": "finance module stock screener shariah halal investing portfolio charts prices",
+      "a": "He built ZaryahPlus's Finance module end to end: a Shari'ah-compliant stock screener, live prices and intraday charts, and a portfolio simulator behind a fail-closed compliance gate, so nothing is treated as compliant unless the check actually passes. Stack: React/TypeScript and FastAPI.",
+      "src": "Experience · ZaryahX"
+    },
+    {
+      "id": "guardrails",
+      "q": "guardrails safety jailbreak moderation crisis prompt injection llm security",
+      "a": "On ZaryahPlus he added output-side moderation, fixed jailbreak and euphemism bypasses, handled native-script Arabic and Urdu, added crisis helplines by country, and put gates on LLM endpoints that had none. On the client WhatsApp assistant he built prompt-injection defences and an owner-approval step for any write action.",
+      "src": "Experience · Safety & guardrails"
+    },
+    {
+      "id": "safety",
+      "q": "how does he make ai safe principles approach philosophy responsible build systems",
+      "a": "Four rules he builds by: (1) rules decide and models explain, so verdicts and amounts come from deterministic code; (2) a person approves anything sent to a customer; (3) fail closed, so if a check can't run the answer is no; (4) evals gate releases, so a version only ships if safety, citation accuracy and quality clear fixed bars.",
+      "src": "Safety & guardrails"
+    },
+    {
+      "id": "agents",
+      "q": "llm agents agentic tool use built agent experience multi-agent coworkers",
+      "a": "Agent work includes: Raya's tool-using features on Telegram in ZaryahPlus; AI coworkers in an Islamic finance platform that can only act through an audit-logged OPA/Rego policy gateway; a multi-tenant WhatsApp work assistant; the server core of an on-premise multi-agent coordinator; LLM agents for the ARC-AGI-3 Kaggle competition; and an AI QA agent built on Claude Code and Playwright.",
+      "src": "Experience · Projects"
+    },
+    {
+      "id": "ifi",
+      "q": "islamic finance intelligence platform aaoifi policy gateway opa rego proof of concept",
+      "a": "From a leadership brief he built an Islamic finance intelligence proof of concept in under two weeks, embedded in ZaryahPlus: AAOIFI Shari'ah stock screening and contract checks, plus AI coworkers that act only through an OPA/Rego policy gateway that writes an audit record before every action. Stack: FastAPI, Postgres with pgvector, Next.js.",
+      "src": "Experience · Digitech Evoqe"
+    },
+    {
+      "id": "whatsapp",
+      "q": "whatsapp assistant client multi-tenant load test postgres typescript node",
+      "a": "For a client he designed and built, solo and end to end, a multi-tenant WhatsApp AI work assistant in TypeScript, Node and PostgreSQL: per-tenant keys, read-only tools by default with an owner-confirmed write step, prompt-injection defences, encrypted backups with restore drills, and a load test at nearly 2,000 messages per second.",
+      "src": "Experience · Digitech Evoqe"
+    },
+    {
+      "id": "slm",
+      "q": "small language models slm fine-tuning rag evals release gate qlora llm as judge",
+      "a": "At work he builds domain-specific small language models for regulated domains: hybrid retrieval (RAG), QLoRA fine-tuning, LLM-as-judge evaluation, and an automated release gate that blocks a release unless safety and citation accuracy clear fixed bars. Details are internal.",
+      "src": "Experience · Digitech Evoqe"
+    },
+    {
+      "id": "evals",
+      "q": "evaluation evals testing metrics benchmark how measure quality",
+      "a": "He treats evals as the unit tests of AI work: release gates with safety thresholds for his language-model work, labelled eval sets for agents, held-out tournaments and a paired bootstrap for the xG model, and gameweek-by-gameweek accuracy tracking for the FPL bot, shown live on this page.",
+      "src": "Benchmarks · Live panel"
+    },
+    {
+      "id": "qa",
+      "q": "qa testing playwright audit security review test automation ai qa agent",
+      "a": "He built an AI QA agent with Claude Code and Playwright: planner, generator and healer agents write end-to-end tests from plain English, then he converts them to fixed Playwright specs for CI. He used this approach for a QA and security audit of a company coding platform before release.",
+      "src": "Projects · AI QA agent"
+    },
+    {
+      "id": "coordinator",
+      "q": "on-premise multi-agent coordinator server core rbac hmac backups",
+      "a": "He built the server core of an on-premise multi-agent work coordinator in FastAPI and Postgres: signed requests, idempotency keys, role-based access, device enrolment and encrypted backups with a restore drill.",
+      "src": "Experience · Digitech Evoqe"
+    },
+    {
+      "id": "fpl",
+      "q": "fpl fantasy premier league bot auto manager football optimiser telegram",
+      "a": "His FPL Auto-Manager predicts every player's points with a two-stage model (chance of playing × points if playing), then an integer-programming optimiser plans transfers, captain and chips four weeks ahead. It runs hourly on GitHub Actions and sends advice to Telegram. In a full-season replay it scored 2,231 points against 2,030 for the same bot driven by FPL's official predictions. This week's advice is in the live panel.",
+      "src": "Projects · FPL Auto-Manager"
+    },
+    {
+      "id": "xg",
+      "q": "xg expected goals football scout statsbomb streamlit model similar players",
+      "a": "Football xG Lab is an expected-goals model built on free StatsBomb data. On held-out World Cup 2022, Euro 2024 and Copa América 2024 it matches StatsBomb's commercial model (Euro 2024 log loss 0.228 vs 0.226). Football Scout finds players with a similar statistical profile. Both are live Streamlit apps with daily data pipelines.",
+      "src": "Projects · xG Lab & Scout",
+      "link": "https://xg-lab-football.streamlit.app/"
+    },
+    {
+      "id": "kaggle",
+      "q": "kaggle competitions rank rsna pokemon arc agi results machine learning",
+      "a": "Kaggle (mozune4002): top 13% in RSNA knee abnormality detection (799 of 6,299 teams), top 16% in the Pokémon TCG AI Battle (1,085 of 6,807), and LLM agents for interactive reasoning games in ARC-AGI-3. In the Pokémon work he batched every decision into one GPU forward pass, which made self-play training about 6x faster.",
+      "src": "Benchmarks · Kaggle",
+      "link": "https://www.kaggle.com/mozune4002"
+    },
+    {
+      "id": "notes",
+      "q": "sovereign ai notes sequoia whisper transcription pipeline netlify",
+      "a": "Sovereign AI notes is a pipeline that turns Sequoia's six-talk Sovereign AI series into illustrated study notes: it downloads each talk, extracts slides with ffmpeg, transcribes with Whisper, and has Claude pick slides and write notes. Output is a static HTML and PDF site on Netlify.",
+      "src": "Projects · Sovereign AI notes",
+      "link": "https://sovereign-ai-notes.netlify.app"
+    },
+    {
+      "id": "stack",
+      "q": "tech stack skills languages tools frameworks technologies python typescript react",
+      "a": "Languages: Python, TypeScript, JavaScript, SQL. AI: agents and tool use, RAG (Pinecone, pgvector, bge-m3), guardrails, LLM-as-judge evals, QLoRA fine-tuning, LangChain, Claude/OpenAI/Gemini APIs, Ollama, llama.cpp. ML: PyTorch, LightGBM, scikit-learn, PPO. Full stack: React, Next.js, Tailwind, FastAPI, Node/Express, PostgreSQL, Supabase, Firebase, Redis. DevOps: Docker, GitHub Actions, Vercel, Railway, Playwright.",
+      "src": "Resume · Skills"
+    },
+    {
+      "id": "education",
+      "q": "education degree college university vit gpa cgpa graduated",
+      "a": "B.Tech in Computer Science and Engineering from Vellore Institute of Technology, Chennai, September 2022 to May 2026, CGPA 8.1/10. Certifications include OCI 2024 AI Foundations Associate, Supervised Machine Learning, and SQL for Data Science.",
+      "src": "Changelog · Education"
+    },
+    {
+      "id": "earlier",
+      "q": "ifelse brighter india earlier internships hackathon first job onfrabizo",
+      "a": "Earlier: Full-Stack Intern at Ifelse Techsmart Solutions (Jun–Jul 2025), building most core features of the OnfraBizo web app in React and Node.js; Machine Learning Intern at Brighter India (2023), where he also won 2nd place at the BrighterIndia Hackathon.",
+      "src": "Changelog"
+    },
+    {
+      "id": "available",
+      "q": "open to roles hire available job hiring contact email reach relocate remote salary",
+      "a": "Yes, he is open to AI engineering roles. The best way to reach him is email: mohammed.zunnoon.aamir.avaram@gmail.com. For questions about location, notice period or anything else practical, email him directly.",
+      "src": "Contact"
+    },
+    {
+      "id": "languages",
+      "q": "languages speak spoken tamil hindi urdu arabic english communication",
+      "a": "He speaks English, Tamil, Hindi, Urdu and Arabic, which helps when explaining technical work to customers and stakeholders across India and the Middle East.",
+      "src": "Model details"
+    },
+    {
+      "id": "locked",
+      "q": "uae agents competition dubai under wraps secret hidden",
+      "a": "He is preparing a set of public-interest AI agents for an AI agents competition. Details will be shared after judging.",
+      "src": "Projects · Under wraps"
+    },
+    {
+      "id": "site",
+      "q": "how does this chat work site built website this page model card no api key",
+      "a": "This page is styled as an AI model card. The chat answers instantly from a small set of written answers, matched with keyword search in your browser. Optionally you can load a small open model (Qwen2.5 0.5B) that runs entirely on your device with WebGPU. No server, no API key, and nothing you type leaves your browser. If a question isn't about Zunnoon's work, it politely declines: rules decide, models explain.",
+      "src": "This site"
+    }
+  ]
+}

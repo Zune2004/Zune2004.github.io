@@ -1,0 +1,37 @@
+{
+  "gw": 8,
+  "transfers": [
+    {
+      "out": "Semenyo",
+      "in": "Stach"
+    }
+  ],
+  "captain": "Haaland",
+  "vice": "Rogers",
+  "expected": 57.6,
+  "chips": "hold all chips",
+  "accuracy": [
+    {
+      "gw": 6,
+      "mae": 1.049,
+      "spearman": 0.734,
+      "predicted": 51.2,
+      "actual": 84
+    },
+    {
+      "gw": 7,
+      "mae": 1.063,
+      "spearman": 0.723,
+      "predicted": 61.3,
+      "actual": 55
+    },
+    {
+      "gw": 8,
+      "mae": 1.117,
+      "spearman": 0.726,
+      "predicted": 57.6,
+      "actual": 43
+    }
+  ],
+  "updated": "30 Oct 2026"
+}
