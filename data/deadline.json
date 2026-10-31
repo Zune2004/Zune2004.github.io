@@ -1,7 +1,7 @@
 {
-  "next_gw": 9,
-  "deadline": "2026-10-31T11:00:00Z",
-  "current_gw": 8,
-  "current_avg": 45,
-  "current_top": 120
+  "next_gw": 10,
+  "deadline": "2026-11-06T18:30:00Z",
+  "current_gw": 9,
+  "current_avg": 0,
+  "current_top": null
 }
