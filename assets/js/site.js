@@ -63,6 +63,7 @@
     { x: 27, d: 34, r: 1.9, goal: false, name: 'Small language models', tag: 'Work · internal', text: 'Domain models for regulated fields with retrieval, fine-tuning and an automatic release check. Passed its first release gate.', href: '#work' },
     { x: 12, d: 43, r: 1.6, goal: false, name: 'Agent coordinator', tag: 'Work · internal', text: 'Server core of an on-premise multi-agent coordinator: signed requests, role-based access, encrypted backups.', href: '#work' },
     // personal (right half)
+    { x: 64, d: 5, r: 2.4, goal: true, name: 'Archtour', tag: 'Open source · npm', text: "One required PR check that blocks changes you can't undo: dropped columns, removed API routes, deleted databases.", href: '#p-archtour' },
     { x: 49, d: 6, r: 2.4, goal: true, name: 'FPL bot', tag: 'Personal · live', text: "Manages my Fantasy Premier League team every hour on GitHub Actions. Beat a bot using FPL's own predictions by 201 points in a season replay.", href: '#p-fpl' },
     { x: 58, d: 12, r: 2.1, goal: true, name: 'xG Lab', tag: 'Personal · live', text: "Expected-goals model on free data that's level with StatsBomb's commercial model on three tournaments.", href: '#p-xg' },
     { x: 50, d: 18, r: 1.6, goal: true, name: 'Scout', tag: 'Personal · live', text: "Finds players with a similar statistical profile across Europe's top leagues.", href: '#p-xg' },

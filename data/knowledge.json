@@ -12,7 +12,7 @@
     {
       "id": "who",
       "q": "who is zunnoon summary about him introduce yourself tell me about him overview",
-      "a": "Mohammed Zunnoon Aamir is an AI Full-Stack Engineer at Digitech Evoqe in Chennai, India. He ships LLM products to production: tool-using agents with guardrails, RAG pipelines, and the React/TypeScript and Python systems around them. Before that he was an AI Intern at ZaryahX, working on the ZaryahPlus app. He finished his B.Tech in Computer Science at VIT Chennai in May 2026.",
+      "a": "Mohammed Zunnoon Aamir is a Forward Deployed Engineer at Digitech Evoqe in Chennai, India. He ships LLM products to production: tool-using agents with guardrails, RAG pipelines, and the React/TypeScript and Python systems around them. Before that he was an AI Intern at ZaryahX, working on the ZaryahPlus app. He finished his B.Tech in Computer Science at VIT Chennai in May 2026.",
       "src": "Model details"
     },
     {
@@ -24,7 +24,7 @@
     {
       "id": "current",
       "q": "current job role now digitech evoqe work today employer position title",
-      "a": "Since August 2026 he has been an AI Full-Stack Engineer at Digitech Evoqe, the sister company of ZaryahX. He continues as a core engineer on ZaryahPlus, built an Islamic finance intelligence platform, built a multi-tenant WhatsApp AI assistant for a client, builds small domain language models with evaluation-gated releases, and built the server core of an on-premise multi-agent work coordinator.",
+      "a": "Since August 2026 he has been a Forward Deployed Engineer at Digitech Evoqe, the sister company of ZaryahX. He continues as a core engineer on ZaryahPlus, built an Islamic finance intelligence platform, built a multi-tenant WhatsApp AI assistant for a client, builds small domain language models with evaluation-gated releases, and built the server core of an on-premise multi-agent work coordinator.",
       "src": "Experience · Digitech Evoqe"
     },
     {
@@ -174,6 +174,13 @@
       "a": "His ideas page lists every idea he worked on this year as a transfer window: scouted (want to build next), on trial, signed (shipped) and released (stopped, with the reason). Shipped ones include the FPL bot, xG Lab, an AI QA agent, and an Islamic finance intelligence platform built from a one-line leadership brief.",
       "src": "Ideas page",
       "link": "ideas.html"
+    },
+    {
+      "id": "archtour",
+      "q": "archtour open source npm github action pull request check migrations api breaking changes database politewatch",
+      "a": "Archtour is his open-source pull-request check for changes that can't be undone: it blocks dropped database columns, edited migrations that already ran, removed API routes and reused protobuf fields, and flags privileged containers, public ports and deleted databases in Docker Compose, Kubernetes and Terraform. Rules are read from the base branch and overrides are tied to the PR's head commit. It is on npm (v0.3.3) and runs as a GitHub Action. He also open-sourced politewatch, phone alerts when a web page changes that respect each site's robots.txt.",
+      "src": "Projects · Archtour",
+      "link": "https://github.com/Zune2004/archtour"
     }
   ]
 }
